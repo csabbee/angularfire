@@ -12,7 +12,7 @@ app.config(['$routeProvider',
       .when('/nflteams',            { templateUrl: 'views/nfl/list.html',
                                       authRequired: true })
       .when('/ntlteams/:nflTeamId', { templateUrl: 'views/nfl/view.html',
-                                      authRequired: true)}
+                                      authRequired: true})
       .otherwise(                   { redirectTo: '/' });
     }])
   
