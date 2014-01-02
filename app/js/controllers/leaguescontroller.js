@@ -22,9 +22,9 @@ angular.module('fantasyApp.controllers.leagues', ['fantasyApp.services.leagues']
           if(!err){
             $scope.league = null;
             $location.path('/leagues/'+leagueId);
-            $scope.$apply;
+            $scope.$apply();
           }
-        }
+        });
       }
  
       $scope.removeLeague = function(leagueId) {
