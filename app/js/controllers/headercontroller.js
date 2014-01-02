@@ -13,5 +13,9 @@ angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
       };
 
       $scope.navbarEntries = [
+        {
+          "title": "NFL Teams",
+          "link": "/nflteams"
+        }
       ];
     }])
