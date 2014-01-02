@@ -12,6 +12,9 @@ angular.module('fantasyApp.services.firebaseRefs', [])
         },
         players: function() {
           return new Firebase(FBURL+'/players');
+        },
+        fantasyTeams: function() {
+          return new Firebase(FBURL+'/fantasyTeams');
         }
       }
     }
